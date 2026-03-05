@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Game Top Up</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>GameTopUp</h1>
+<p>Top Up Game Cepat & Aman</p>
+</header>
+
+<div class="container">
+
+<h2>Pilih Game</h2>
+
+<div class="game-list">
+
+<div class="game" onclick="selectGame('Mobile Legends')">
+<img src="https://i.imgur.com/3ZQ3Z9M.png">
+<p>Mobile Legends</p>
+</div>
+
+<div class="game" onclick="selectGame('Free Fire')">
+<img src="https://i.imgur.com/Y7K5FQO.png">
+<p>Free Fire</p>
+</div>
+
+<div class="game" onclick="selectGame('PUBG Mobile')">
+<img src="https://i.imgur.com/jkQ6K0G.png">
+<p>PUBG Mobile</p>
+</div>
+
+</div>
+
+<h2>ID Game</h2>
+<input type="text" id="gameId" placeholder="Masukkan ID Game">
+
+<h2>Pilih Nominal</h2>
+
+<div class="diamond-list">
+
+<button onclick="selectDiamond('86 Diamond - Rp20.000')">86</button>
+<button onclick="selectDiamond('172 Diamond - Rp40.000')">172</button>
+<button onclick="selectDiamond('257 Diamond - Rp60.000')">257</button>
+<button onclick="selectDiamond('344 Diamond - Rp80.000')">344</button>
+
+</div>
+
+<h2>Pembayaran</h2>
+
+<select id="payment">
+<option>DANA</option>
+<option>OVO</option>
+<option>GoPay</option>
+<option>QRIS</option>
+</select>
+
+<button class="buy" onclick="buy()">Beli Sekarang</button>
+
+<p id="result"></p>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
